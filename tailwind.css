@@ -1,0 +1,357 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --gray-100: rgba(243, 244, 246, 1);
+  --gray-200: rgba(229, 231, 235, 1);
+  --gray-300: rgba(209, 213, 219, 1);
+  --gray-50: rgba(249, 250, 251, 1);
+  --gray-500: rgba(107, 114, 128, 1);
+  --gray-700: rgba(55, 65, 81, 1);
+  --gray-800: rgba(31, 42, 55, 1);
+  --gray-900: rgba(17, 25, 40, 1);
+  --green-100: rgba(222, 247, 236, 1);
+  --green-500: rgba(14, 159, 110, 1);
+  --green-800: rgba(3, 84, 63, 1);
+  --leading-none-text-2xl-font-bold-font-family: "Inter", Helvetica;
+  --leading-none-text-2xl-font-bold-font-size: 24px;
+  --leading-none-text-2xl-font-bold-font-style: normal;
+  --leading-none-text-2xl-font-bold-font-weight: 700;
+  --leading-none-text-2xl-font-bold-letter-spacing: 0px;
+  --leading-none-text-2xl-font-bold-line-height: 24px;
+  --leading-none-text-3xl-font-bold-font-family: "Inter", Helvetica;
+  --leading-none-text-3xl-font-bold-font-size: 30px;
+  --leading-none-text-3xl-font-bold-font-style: normal;
+  --leading-none-text-3xl-font-bold-font-weight: 700;
+  --leading-none-text-3xl-font-bold-letter-spacing: 0px;
+  --leading-none-text-3xl-font-bold-line-height: 30px;
+  --leading-none-text-base-font-normal-font-family: "Inter", Helvetica;
+  --leading-none-text-base-font-normal-font-size: 16px;
+  --leading-none-text-base-font-normal-font-style: normal;
+  --leading-none-text-base-font-normal-font-weight: 400;
+  --leading-none-text-base-font-normal-letter-spacing: 0px;
+  --leading-none-text-base-font-normal-line-height: 16px;
+  --leading-none-text-sm-font-medium-font-family: "Inter", Helvetica;
+  --leading-none-text-sm-font-medium-font-size: 14px;
+  --leading-none-text-sm-font-medium-font-style: normal;
+  --leading-none-text-sm-font-medium-font-weight: 500;
+  --leading-none-text-sm-font-medium-letter-spacing: 0px;
+  --leading-none-text-sm-font-medium-line-height: 14px;
+  --leading-none-text-sm-font-normal-font-family: "Inter", Helvetica;
+  --leading-none-text-sm-font-normal-font-size: 14px;
+  --leading-none-text-sm-font-normal-font-style: normal;
+  --leading-none-text-sm-font-normal-font-weight: 400;
+  --leading-none-text-sm-font-normal-letter-spacing: 0px;
+  --leading-none-text-sm-font-normal-line-height: 14px;
+  --leading-none-text-xl-font-bold-font-family: "Inter", Helvetica;
+  --leading-none-text-xl-font-bold-font-size: 20px;
+  --leading-none-text-xl-font-bold-font-style: normal;
+  --leading-none-text-xl-font-bold-font-weight: 700;
+  --leading-none-text-xl-font-bold-letter-spacing: 0px;
+  --leading-none-text-xl-font-bold-line-height: 20px;
+  --leading-none-text-xs-font-medium-font-family: "Inter", Helvetica;
+  --leading-none-text-xs-font-medium-font-size: 12px;
+  --leading-none-text-xs-font-medium-font-style: normal;
+  --leading-none-text-xs-font-medium-font-weight: 500;
+  --leading-none-text-xs-font-medium-letter-spacing: 0px;
+  --leading-none-text-xs-font-medium-line-height: 12px;
+  --leading-tight-text-base-font-medium-font-family: "Inter", Helvetica;
+  --leading-tight-text-base-font-medium-font-size: 16px;
+  --leading-tight-text-base-font-medium-font-style: normal;
+  --leading-tight-text-base-font-medium-font-weight: 500;
+  --leading-tight-text-base-font-medium-letter-spacing: 0px;
+  --leading-tight-text-base-font-medium-line-height: 125%;
+  --leading-tight-text-sm-font-normal-font-family: "Inter", Helvetica;
+  --leading-tight-text-sm-font-normal-font-size: 14px;
+  --leading-tight-text-sm-font-normal-font-style: normal;
+  --leading-tight-text-sm-font-normal-font-weight: 400;
+  --leading-tight-text-sm-font-normal-letter-spacing: 0px;
+  --leading-tight-text-sm-font-normal-line-height: 125%;
+  --leading-tight-text-sm-font-semibold-font-family: "Inter", Helvetica;
+  --leading-tight-text-sm-font-semibold-font-size: 14px;
+  --leading-tight-text-sm-font-semibold-font-style: normal;
+  --leading-tight-text-sm-font-semibold-font-weight: 600;
+  --leading-tight-text-sm-font-semibold-letter-spacing: 0px;
+  --leading-tight-text-sm-font-semibold-line-height: 125%;
+  --leading-tight-text-xl-font-bold-font-family: "Inter", Helvetica;
+  --leading-tight-text-xl-font-bold-font-size: 20px;
+  --leading-tight-text-xl-font-bold-font-style: normal;
+  --leading-tight-text-xl-font-bold-font-weight: 700;
+  --leading-tight-text-xl-font-bold-letter-spacing: 0px;
+  --leading-tight-text-xl-font-bold-line-height: 125%;
+  --red-500: rgba(240, 82, 82, 1);
+  --shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px
+    rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px
+    rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+  --text-2xl-font-bold-font-family: "Inter", Helvetica;
+  --text-2xl-font-bold-font-size: 24px;
+  --text-2xl-font-bold-font-style: normal;
+  --text-2xl-font-bold-font-weight: 700;
+  --text-2xl-font-bold-letter-spacing: -0.24px;
+  --text-2xl-font-bold-line-height: 150%;
+  --text-base-font-medium-font-family: "Inter", Helvetica;
+  --text-base-font-medium-font-size: 16px;
+  --text-base-font-medium-font-style: normal;
+  --text-base-font-medium-font-weight: 500;
+  --text-base-font-medium-letter-spacing: 0px;
+  --text-base-font-medium-line-height: 150%;
+  --text-base-font-normal-font-family: "Inter", Helvetica;
+  --text-base-font-normal-font-size: 16px;
+  --text-base-font-normal-font-style: normal;
+  --text-base-font-normal-font-weight: 400;
+  --text-base-font-normal-letter-spacing: 0px;
+  --text-base-font-normal-line-height: 150%;
+  --text-lg-font-semibold-font-family: "Inter", Helvetica;
+  --text-lg-font-semibold-font-size: 18px;
+  --text-lg-font-semibold-font-style: normal;
+  --text-lg-font-semibold-font-weight: 600;
+  --text-lg-font-semibold-letter-spacing: 0px;
+  --text-lg-font-semibold-line-height: 150%;
+  --text-sm-font-medium-font-family: "Inter", Helvetica;
+  --text-sm-font-medium-font-size: 14px;
+  --text-sm-font-medium-font-style: normal;
+  --text-sm-font-medium-font-weight: 500;
+  --text-sm-font-medium-letter-spacing: 0px;
+  --text-sm-font-medium-line-height: 150%;
+  --text-sm-font-normal-font-family: "Inter", Helvetica;
+  --text-sm-font-normal-font-size: 14px;
+  --text-sm-font-normal-font-style: normal;
+  --text-sm-font-normal-font-weight: 400;
+  --text-sm-font-normal-letter-spacing: 0px;
+  --text-sm-font-normal-line-height: 150%;
+  --text-sm-font-semibold-font-family: "Inter", Helvetica;
+  --text-sm-font-semibold-font-size: 14px;
+  --text-sm-font-semibold-font-style: normal;
+  --text-sm-font-semibold-font-weight: 600;
+  --text-sm-font-semibold-letter-spacing: 0px;
+  --text-sm-font-semibold-line-height: 150%;
+  --text-xs-font-medium-font-family: "Inter", Helvetica;
+  --text-xs-font-medium-font-size: 12px;
+  --text-xs-font-medium-font-style: normal;
+  --text-xs-font-medium-font-weight: 500;
+  --text-xs-font-medium-letter-spacing: 0px;
+  --text-xs-font-medium-line-height: 150%;
+  --text-xs-font-normal-font-family: "Inter", Helvetica;
+  --text-xs-font-normal-font-size: 12px;
+  --text-xs-font-normal-font-style: normal;
+  --text-xs-font-normal-font-weight: 400;
+  --text-xs-font-normal-letter-spacing: 0px;
+  --text-xs-font-normal-line-height: 150%;
+  --underline-text-xs-font-medium-font-family: "Inter", Helvetica;
+  --underline-text-xs-font-medium-font-size: 12px;
+  --underline-text-xs-font-medium-font-style: normal;
+  --underline-text-xs-font-medium-font-weight: 500;
+  --underline-text-xs-font-medium-letter-spacing: 0px;
+  --underline-text-xs-font-medium-line-height: 150%;
+  --uppercase-text-sm-font-semibold-font-family: "Inter", Helvetica;
+  --uppercase-text-sm-font-semibold-font-size: 14px;
+  --uppercase-text-sm-font-semibold-font-style: normal;
+  --uppercase-text-sm-font-semibold-font-weight: 600;
+  --uppercase-text-sm-font-semibold-letter-spacing: 0px;
+  --uppercase-text-sm-font-semibold-line-height: 150%;
+  --uppercase-text-xs-font-semibold-font-family: "Inter", Helvetica;
+  --uppercase-text-xs-font-semibold-font-size: 12px;
+  --uppercase-text-xs-font-semibold-font-style: normal;
+  --uppercase-text-xs-font-semibold-font-weight: 600;
+  --uppercase-text-xs-font-semibold-letter-spacing: 0px;
+  --uppercase-text-xs-font-semibold-line-height: 150%;
+  --white: rgba(255, 255, 255, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
